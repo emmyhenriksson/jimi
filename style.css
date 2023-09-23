@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Bungee Outline";
+    src: url(fonts/BungeeOutline-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Bungee Shade";
+    src: url(fonts/BungeeShade-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Barlow Condensed";
+    src: url(fonts/BarlowCondensed-Regular.ttf);
+}
+@font-face {
+    font-family: "Barlow Semi Condensed";
+    src: url(fonts/BarlowSemiCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Barlow Condensed Black";
+    src: url(fonts/BarlowSemiCondensed-Black.ttf);
+}
+
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+div {
+    background-color: rgba(0, 0, 0, 0.521);
+    border-radius: 10px;
+    margin: 70px auto;
+    max-width:1200px;
+    min-width: 800px;
+
+}
+
+header {
+    color: white;
+    padding-left: 4px;
+    padding-top: 0px;
+    font-family: "Bungee Shade";
+    font-size: 3vw;
+}
+
+
+h1 {
+    padding: 0px;
+    line-height: 100px;
+/* Måste fixa så att texten ändrar storlek*/
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin: 0px 15px;
+    font-family: "Barlow Semi Condensed";
+    font-size: 20px;
+}
+
+nav a {
+    background-color: rgba(255, 255, 255, 0.621);
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 10px;
+    flex-basis: 200px;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.471);
+    color: white;
+}
+
+nav a:active {
+    background-color: rgba(255, 255, 255, 0.621);
+    color: black;
+    border: 1px solid white;
+    box-shadow: 0 0 5px white;
+    font-family: "Barlow Condensed Black";
+
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.407);
+    width: 97%;
+    border: 1px solid white;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+.container h1 {
+    font-family: "Bungee Outline";
+    line-height: 0px;
+}
+
+.container h2 {
+    font-family: "Barlow Condensed";
+}
+
+.container div {
+    font-family: "Barlow Semi Condensed";
+    margin: 50px 0;
+    padding: 10px;
+}
+
+.container p {
+    margin: 0;
+}
+
+div.container p.indent {
+    text-indent: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+div div {
+    background-color: transparent;
+    margin: 10px auto;
+    padding-top: 10px;
+    width: 700px;
+    min-width: auto;
+}
+div.albumCover{
+    background-image: url('images/Are_You_Experienced_-_US_cover-edit.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 500px;
+    min-width: auto;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
