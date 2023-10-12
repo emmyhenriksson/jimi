@@ -48,25 +48,21 @@ header {
     padding-left: 4px;
     padding-top: 0px;
     font-family: "Bungee Shade";
-    font-size: 3vw;
+    font-size: 1.7em;
 }
 
-
-h1 {
-    padding: 0px;
-    line-height: 100px;
-/* Måste fixa så att texten ändrar storlek*/
+header h1 {
+    margin-bottom: 0px;
 }
-
 
 
 nav {
     display: flex;
     justify-content: center;
     gap: 2px;
-    margin: 70px 15px;
+    margin: 30px 15px 70px 15px;
     font-family: "Barlow Semi Condensed";
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 nav a {
@@ -112,7 +108,7 @@ div {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(30, 1fr);
-    grid-auto-rows: 20% 20% 20% 20% 20%;
+    grid-auto-rows: auto;
     gap: 4px;
 
 }
@@ -124,7 +120,7 @@ div h1 {
     grid-column: 1 / span 19;
 }
 
-div h2 {
+h2 {
     font-family: "Barlow Condensed";
     grid-row: 1;
     grid-column: 1 / span 15;
@@ -142,19 +138,15 @@ ul {
 ol {
     font-family: "Barlow Semi Condensed";
     font-weight: bold;
-    grid-column: 1 / span 25;
-    grid-row: -5 / span 5;
-    margin: -10px 0px 0px 0px;
     padding: 0px;
     color: #b04d88;
+    margin: 0px;
 }
 
 ol li {
     font-family: "Barlow Semi Condensed";
     font-weight: normal;
     font-size: 12px;
-    list-style: inside initial;
-
 }
 
 
@@ -163,12 +155,12 @@ ul li {
     text-indent: 10%;
 }
 
-div p {
+p {
     font-family: "Barlow Semi Condensed";
-    padding: 0px;
+    padding: 5px;
     margin-top: 60px;
-    grid-row: 3 / span 2;
-    grid-column: 1 / span 17;
+    grid-row: 3 / span 3;
+    grid-column: 1 / span 18;
 }
 
 div div {
@@ -179,31 +171,34 @@ div div {
     border-top-right-radius: 0px;
     margin: 0px;
     background-color: #b04d88;
-    grid-row: 5;
+    grid-row: 6;
     grid-column: 1 / span 5;
     color: #eecb00;
     font-family: "Barlow Semi Condensed";
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     border-top-left-radius: 10px;
 
 }
 
 section {
-    grid-row: 4;
+    grid-row: 5;
     grid-column: 19 / span 12;
     display: flex;
     gap: 10px;
+    margin: 4px 0px;
 }
 
 section div {
     background-color: #eecb00;
     flex-shrink: 1;
-    overflow: hidden;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
+    font-size: 16px;
+    justify-content: start;
+    align-items: start;
 }
 
 .sideOne {
@@ -212,12 +207,7 @@ section div {
 }
 
 .box4 {
-    background-color: #b04d88;
-    grid-row: 5;
     grid-column: 26 / span 5;
-    color: #eecb00;
-    font-family: "Barlow Semi Condensed";
-    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,14 +218,10 @@ section div {
 }
 
 .box3 {
-    background-color: #b04d88;
     background-image: url(images/chas.jpg);
     background-size: cover;
-    grid-row: 5;
     grid-column: 21 / span 5;
     background-position: center;
-    font-family: "Barlow Semi Condensed";
-    font-size: 16px;
     color: white;
     display: flex;
     justify-content: start;
@@ -246,12 +232,7 @@ section div {
 }
 
 .box2 {
-    background-color: #b04d88;
-    grid-row: 5;
     grid-column: 11  / span 10;
-    color: #eecb00;
-    font-family: "Barlow Semi Condensed";
-    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,15 +244,12 @@ section div {
 
 
 img {
-    object-fit: cover;
     max-width: 100%;
     max-height: 100%;
-    min-width: auto;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 4;
     grid-column: 19 / span 12;
-    box-sizing: border-box;
     transition: opacity 1s;
 }
 
@@ -296,7 +274,7 @@ img {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 10px;
     padding: 30px 20px;
-    grid-row: 5;
+    grid-row: 6;
     grid-column: 26 / span 5;
 }
 
@@ -315,10 +293,8 @@ img {
     grid-column: 1 / span 10;
     background-color: #f4d3af;
     color: #127ba3;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 0px;
     padding: 20px;
+    grid-row: 6;
 }
 
 #bold .box2 {
@@ -335,6 +311,93 @@ img {
 #bold ol{
     color: #f4d3af;
 }
+
+footer {
+    font-family: "Barlow Semi Condensed";
+    color: white;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+
+@media (min-width: 900px) and (max-width: 1200px){
+    header {
+        font-size: 3vw;
+    }
+    
+    div h1 {
+        font-size: 3.5vw;
+    }
+
+    h2 {
+        font-size: 2.7vw;
+    }
+
+    p {
+        font-size: 1.8vw;
+    }
+
+    ol {
+        font-size: 1.8vw;
+    }
+
+    ul {
+        font-size: 1.8vw;
+    }
+
+    ol li {
+        font-size: 1.3vw;
+    }
+
+    nav a {
+        font-size: 2.2vw;
+    }
+
+    div div {
+        font-size: 1.6VW;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        font-size: 2.25em; 
+    }
+
+    
+    div h1 {
+        font-size: 2.6em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.35em;
+    }
+
+    ol {
+        font-size: 1.35em;
+    }
+
+    ul {
+        font-size: 1.35em;
+    }
+
+    ol li {
+        font-size: 0.7em;
+    }
+
+    nav a {
+        font-size: 1.3em;
+    }
+
+    div div {
+        font-size: 1em;
+    }
+
+}
+
 
 /* --------MOBIL VERSION---------- */
 
@@ -375,7 +438,6 @@ img {
     h1 {
         padding: 0px;
         line-height: 70px;
-    /* Måste fixa så att texten ändrar storlek*/
     }
     
     nav {
@@ -384,7 +446,7 @@ img {
         gap: 2px;
         margin: 70px 15px;
         font-family: "Barlow Semi Condensed";
-        font-size: 14px;
+        font-size: 3vw;
     }
     
     nav a {
@@ -431,7 +493,7 @@ img {
         padding: 10px;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-auto-rows: 20% 20% 20% 20% 20%;
+        grid-auto-rows: auto;
         gap: 4px;
     
     }
@@ -464,21 +526,21 @@ img {
         padding: 0px;
         grid-row: 6;
         grid-column: 1 / span 6;
+        font-size: 3.5vw;
     }
     
     ol {
         font-family: "Barlow Semi Condensed";
         font-weight: bold;
-        grid-column: 1 / span 25;
-        grid-row: 1 / span 5;
         padding: 10px;
         color: #b04d88;
+        font-size: 3.7vw;
     }
     
     ol li {
         font-family: "Barlow Semi Condensed";
         font-weight: normal;
-        font-size: 12px;
+        font-size: 3.3vw;
     }
 
         
@@ -488,6 +550,7 @@ img {
         grid-row: 4;
         grid-column: 1 / span 6;
         margin: 0px;
+        font-size: 6vw;
         
     }
     
@@ -497,6 +560,7 @@ img {
         grid-column: 1 / span 6;
         padding: 0px;
         margin-top: 0px;
+        font-size: 5vw;
     }
     
     ul li {
@@ -510,6 +574,7 @@ img {
         margin-top: 60px;
         grid-row: 7;
         grid-column: 1 / span 6;
+        font-size: 3.5vw;
     }
     
     div div {
@@ -526,8 +591,8 @@ img {
         font-family: "Barlow Semi Condensed";
         font-size: 14px;
         display: flex;
-        justify-content: start;
-        align-items: start;
+        justify-content: center;
+        align-items: center;
         padding: 35px;
         border-top-left-radius: 10px;
     }
@@ -547,6 +612,8 @@ img {
         overflow: hidden;
         font-size: 16px;
         padding: 10px;
+        justify-content: start;
+        align-items: start;
     }
     
     .box4 {
@@ -555,7 +622,6 @@ img {
         grid-column: 5 / span 2;
         color: #eecb00;
         font-family: "Barlow Semi Condensed";
-        font-size: 14px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -573,7 +639,6 @@ img {
         grid-row: 9;
         grid-column: 3 / span 2;
         font-family: "Barlow Semi Condensed";
-        font-size: 14px;
         padding: 20px;
         border-top-right-radius: 10px;
         display: flex;
@@ -588,7 +653,6 @@ img {
         grid-column: 3  / span 4;
         color: #eecb00;
         font-family: "Barlow Semi Condensed";
-        font-size: 14px;
         display: flex;
         justify-content: center;
         align-items: center;
